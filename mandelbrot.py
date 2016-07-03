@@ -19,33 +19,33 @@ def get_arguments():
         '--size', '-s',
         type=str,
         default='500x500',
-        help='The output image size, example format: 500x500')
+        help='the output image size, example format: 500x500')
 
     parser.add_argument(
         '--plane', '-p',
         type=str,
         default='-2.0:1.0:-1.5:1.5',
-        help=('The imaginary and real axis range, ' +
+        help=('the real and imaginary axis range, ' +
               'example format: -2.0:1.0:-1.5:1.5'))
 
     parser.add_argument(
         '--tasks', '-t',
         type=int,
         default=1,
-        help=('The number of concurrent CPU tasks to ' +
+        help=('the number of concurrent CPU tasks to ' +
               'generate the visualisation'))
 
     parser.add_argument(
         '--output', '-o',
         type=str,
         default='mandelbrot.png',
-        help='The output filename')
+        help='the output filename')
 
     parser.add_argument(
         '--quiet', '-q',
         type=int,
         default=0,
-        help='Quiet mode (no verbose logs)')
+        help='quiet mode (no verbose logs)')
 
     parser.add_argument(
         '--mode', '-m',
