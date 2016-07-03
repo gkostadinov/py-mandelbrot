@@ -4,10 +4,10 @@ Mandelbrot set visualisation written in Python and accelerated with PyCUDA
 ![Mandelbrot set screenshot](screens/mandelbrot.png "Mandelbrot set")
 
 ## Prerequisites
- - Python 2.7+ or Python 3+
- - Pillow
- - PyCUDA (optional, for CUDA compatible devices)
- - PyQt 4 or 5 (optional, for GUI)
+ - [Python 2.7+ or Python 3+](http://python.org)
+ - [Pillow](http://pillow.readthedocs.io/en/3.3.x/installation.html)
+ - [PyCUDA](https://wiki.tiker.net/PyCuda/Installation) (optional, for CUDA compatible devices)
+ - [PyQt 4 or 5](https://wiki.python.org/moin/PyQt) (optional, for GUI)
 
 ## Usage
 `python mandelbrot.py [-h] [--size SIZE] [--plane PLANE] [--tasks TASKS] [--output OUTPUT] [--quiet QUIET] [--mode MODE]`
@@ -30,7 +30,7 @@ __--tasks TASKS, -t TASKS__
 
 _Description:_ The number of concurrent CPU tasks to generate the visualisation.
 
-Default: 1
+_Default:_ 1
 
 __--output OUTPUT, -o OUTPUT__
 
@@ -93,3 +93,8 @@ __Command used:__ `python mandelbrot.py -m 1 -g 1 -s 4096x4096 -p="0.27:0.28:0:0
 ![Mini Mandelbrot screenshot](screens/mini_mandelbrot_2.png "Mini Mandelbrot")
 
 __Command used:__ `python mandelbrot.py -m 1 -g 1 -s 4096x4096 -p="-1.79:-1.71:-0.04:0.04" -o mini_mandelbrot_2.png`
+
+
+## Contributions
+
+Any contributions are welcomed! Feel free to contribute by opening a [pull request](https://help.github.com/articles/using-pull-requests/).
